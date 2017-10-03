@@ -12,3 +12,29 @@
 7. Update the .vscode/settings.json. Directions are in a comment.
 8. You're all set. Pop open hello.py and add a breakpoint via the gutter to the left.  Click the Debug button to the far left and then click the green play button or simply press F5.
 9. Be sure to check out some of the capabilities of the Python extension
+
+If you want to make this settings globally, create usersettings using https://code.visualstudio.com/docs/getstarted/settings 
+You can also copy this code 
+```json
+{
+     "python.pythonPath": "/your/path/to/anaconda3/envs/tensorflow/bin/python3.5",
+     "launch": {
+        "version": "0.2.0",
+        "configurations": [{
+            "name": "Python",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": true,
+            "pythonPath": "${config:python.pythonPath}",
+            "program": "${file}",
+            "cwd": "${workspaceRoot}",
+            "debugOptions": [
+                "WaitOnAbnormalExit",
+                "WaitOnNormalExit",
+                "RedirectOutput"
+            ]
+        }]
+    }
+}
+```
+under `/Users/{username}/Library/Application\ Support/Code/User/settings.json `
