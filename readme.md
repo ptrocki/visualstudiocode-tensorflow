@@ -14,9 +14,9 @@
 9. Be sure to check out some of the capabilities of the Python extension
 
 If you want to make this settings globally:
-    - create user settings using:
-    - https://code.visualstudio.com/docs/getstarted/settings
-    - Copy below code under `/Users/{username}/Library/Application\ Support/Code/User/settings.json ` 
+  * create user settings using:
+  * https://code.visualstudio.com/docs/getstarted/settings
+  * Copy below code under `/Users/{username}/Library/Application\ Support/Code/User/settings.json ` 
 ```json
 {
      "python.pythonPath": "/your/path/to/anaconda3/envs/tensorflow/bin/python3.5",
