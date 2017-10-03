@@ -13,8 +13,10 @@
 8. You're all set. Pop open hello.py and add a breakpoint via the gutter to the left.  Click the Debug button to the far left and then click the green play button or simply press F5.
 9. Be sure to check out some of the capabilities of the Python extension
 
-If you want to make this settings globally, create usersettings using https://code.visualstudio.com/docs/getstarted/settings 
-You can also copy this code 
+If you want to make this settings globally:
+    - create user settings using:
+    - https://code.visualstudio.com/docs/getstarted/settings
+    - Copy below code under `/Users/{username}/Library/Application\ Support/Code/User/settings.json ` 
 ```json
 {
      "python.pythonPath": "/your/path/to/anaconda3/envs/tensorflow/bin/python3.5",
@@ -37,4 +39,3 @@ You can also copy this code
     }
 }
 ```
-under `/Users/{username}/Library/Application\ Support/Code/User/settings.json `
